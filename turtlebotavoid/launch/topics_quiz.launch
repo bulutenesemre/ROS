@@ -1,4 +1,4 @@
 <launch>
-    <node pkg="topics_quiz" type="turtlebot2.py" name="topics_quiz_node" output="screen">
+    <node pkg="turtlebotavoid" type="turtlebot2.py" name="turtlebot2_node" output="screen">
     </node>
 </launch>

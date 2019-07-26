@@ -58,7 +58,7 @@ def callback(msg):
 
     pub.publish(move)
 
-rospy.init_node('topics_quiz_node') #Determine name of node
+rospy.init_node('turtlebot2_node') #Determine name of node
 sub = rospy.Subscriber('/kobuki/laser/scan', LaserScan, callback) #We subscribe to the laser's topic
 pub = rospy.Publisher('/cmd_vel', Twist) #We publish velocity to master
 rospy.spin() #All callbacks get called for subscribers.
